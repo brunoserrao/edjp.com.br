@@ -1,0 +1,883 @@
+/*
+Theme Name: EDJP
+Theme URI: http://brunoserrao.com
+Author: Bruno Serrão
+Author URI: http://brunoserrao.com
+Description: Tema para Escola EDJP
+Version: 1.0
+-------------------------------------------------------------- */
+body{
+	font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+	background-color: #00ACA1;
+}
+a{
+	text-decoration: none;
+}
+
+*::-webkit-input-placeholder {
+    color: #FFF;
+    opacity: 0.5;
+}
+*:-moz-placeholder {
+    color: #FFF;
+    opacity: 0.5;
+}
+*::-moz-placeholder {
+    color: #FFF;
+    opacity: 0.5;
+}
+*:-ms-input-placeholder {
+    color: #FFF;
+    opacity: 0.5;
+}
+
+/* Clearing floats */
+.clear{
+	clear: both;
+}
+
+span.post-resumo {
+	display: block;
+	padding-top: 10px;
+	font-size: 14px;
+}
+
+.titulo-area, .titulo-area a{
+	font-size: 20px;
+	color: #FFF;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+	
+	.titulo-interna, .titulo-interna a{
+		text-align: left;
+	}
+
+	.titulo-interna span{
+		display:inline-block;
+		border-bottom:1px solid #FFF;
+		padding-bottom:2px;
+	}
+
+.post-interno{
+	margin-top: 10px;
+}
+
+.post-data{
+	font-size: 16px;
+	color: #00377b;
+	margin-bottom: 10px;
+	display: block;
+}
+
+/* Images */
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* Paginas simples */
+#pagina{
+	
+}
+
+#pagina #pagina-content{
+	/*color: #FFF;*/
+	margin-bottom: 10px;
+	float: left;
+	background-color: #FFF;
+}
+
+
+	#pagina #pagina-content img{
+		max-width: 100%;
+		height: auto;
+	}
+
+	#pagina-content p {
+		color: #00377b;
+		font-size: 14px;
+		width: 60%;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+/* 404 */
+.pagina-404{
+	background-color: gray;
+	text-align: center;
+	color: #FFF;
+	display: table-cell;
+	width: 100%;
+	height: 300px;
+	vertical-align: middle;
+}
+
+/* Paginacao */
+	#paginacao{
+
+	}
+
+	#paginacao ul{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+		#paginacao ul li{
+			display: inline-block;
+		}
+
+		#paginacao ul li a,  ul li span.current{
+			padding-left: 8px;
+			padding-right: 8px;
+			color: #000;
+		}
+		
+		#paginacao ul li span.current{
+			background-color: #FFF;
+		}
+/* Topo */
+#topo{
+
+}
+
+	#topo #logo-menu{
+		background-color: #002561;
+		height: 90px;
+		position: relative;
+	}
+
+	#topo .topo-relativo{
+		position: relative;
+	}
+
+	#topo #logo-sombra{
+		position: absolute;
+		width: 345px;
+		height: 183px;
+		left: -170px;
+		top: 0px;
+	}
+
+	#topo #logo{
+		position: absolute;
+		z-index: 10;
+		top: 10px;
+	}
+
+		#topo #logo h1{
+			display: block;
+			width: 180px;
+			height: 180px;
+			background-image: url(images/jean-piahet-logo.png);
+			background-size: 100%;
+			text-indent: -1000px;
+			overflow: hidden;
+		}
+
+	#topo #menu-container{
+		position: absolute;
+		z-index: 10;
+		left: 200px;
+		top: 0;
+		width: 600px;
+		height: 90px;
+	}
+
+
+	#topo #social{
+		position: absolute;
+		z-index: 10;
+		right: 0px;
+		top: 15px;
+		width: 135px;
+		height: 60px;
+	}
+
+	#topo #social .facebook-link{
+		margin-right: 10px;
+	}
+
+	#topo #menu-menu-principal{
+		display: table;
+		width: 100%;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+
+		#topo #menu-menu-principal li{
+			display: table-cell;
+			height: 100px;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		#topo #menu-menu-principal li a{
+			color: #FFF;
+		}
+
+/* BANNER */
+#banners{
+	position: relative;
+	width: 100%;
+	height: 355px;
+	overflow: hidden;
+}
+
+	#banners .esquerda{
+		left: 20px;
+	}
+
+	#banners .direita{
+		right: 20px;
+		right: 20px;
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+
+	#banners .setas{
+		position: absolute;
+		top: 50%;
+		margin-top: -31.5px;
+		background-image: url(images/banner-setas.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		display: block;
+		width: 40px;
+		height: 63px;
+		cursor: pointer;
+		z-index: 1000;
+	}
+
+	#banners #banners-paginate{
+		position: absolute;
+		bottom: 0px;
+		right: 10px;
+		/*width: 190px;*/
+		height: 75px;
+		text-align: center;
+		z-index: 1000;
+	}
+		#banners #banners-paginate a{
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			border-radius: 6px;
+			background-color: #FFF;
+			overflow: hidden;
+			text-indent: -100px;
+			margin: 5px;
+			margin-top: 35px
+		}
+
+		#banners #banners-paginate a.activeSlide{
+			background-color: #F0513D;
+		}
+
+	#banners #banners-content, #banners #banners-content .banner-cycle{
+		position: relative;
+		width: 100%;
+		height: 100%
+	}
+
+	#banners #banners-content .banner-descricao{
+		position: absolute;
+		bottom: 0px;
+		background-color: rgba(0,0,0, 0.5);
+		width: 100%;
+		height: 75px;
+		overflow: hidden
+	}
+
+	#banners #banners-content .banner-post-categoria{
+		font-size: 12px;
+		color: #FFF;
+		position: absolute;
+		top: 40px;
+	}
+
+	#banners #banners-content .banner-post-titulo{
+		position: absolute;
+		top: 10px;
+		text-transform: uppercase;
+		font-size: 20px;
+	}
+
+	#banners #banners-content .banner-post-titulo h1, #banners #banners-content .banner-post-titulo h1 a{
+		color: #FFF;
+		font-weight: normal;
+		font-size: 16px;
+	}
+
+	#banners #banners-content .banner-padding{
+		padding: 10px;
+	}
+
+/* HOME */
+#home{
+
+}
+
+	#home .coluna-home{
+		display: block;
+		float: left;
+		width: 320px;
+		overflow: hidden;
+	}
+
+	#home .coluna-home-parte-1{
+		height: 506px;
+	}
+
+	#home .coluna-home-parte-2{
+		height: 323px;
+	}
+
+/* Vídeos */
+.titulo-videos{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.coluna-videos{
+	background-color: #00a65e;
+}
+
+/* Fotos */
+.coluna-fotos{
+	background-color: #ed1c24;
+}
+
+
+/* Informativos */
+.coluna-informativos, .coluna-textos_tos{
+	background-color: #0098c9;
+}
+
+
+ul.informativos-posts{
+	display: block;
+	font-size: 12px;
+	background-color: #009fcd;
+	margin: 10px;
+}
+	ul.informativos-posts li{
+		display: block;
+		padding: 10px;
+		clear: both;
+		height: 65px;
+		overflow: hidden;
+	}
+
+	ul.informativos-posts li .home-informativo-imagem{
+		padding-right: 10px;
+		float: left;
+	}
+
+	ul.informativos-posts li .home-informativo-titulo, ul.informativos-posts li .home-informativo-titulo a{
+		font-weight: normal;
+		color: #FFF;
+		font-size: 14px;
+	}
+
+/* Buscar */
+.coluna-buscar{
+	background-color: #98459a;
+}
+
+	.coluna-buscar-home{
+		height: 170px;
+	}
+
+	.coluna-buscar form{
+		text-align: center;
+		margin-top: 10px;
+	}
+
+		.coluna-buscar #pesquisar{
+			width: 295px;
+			padding: 10px 20px;
+			height: 80px;
+			margin: auto;
+			border: none;
+			text-align: left;
+			color: #FFF;
+			font-size: 18px;
+			background-color: rgba(255,255,255,0.2);
+			background-image: url(images/buscar-icone.png);
+			background-repeat: no-repeat;
+			background-position: 225px center;
+			background-size: 20%;
+			font-family: "Futura";
+		}
+
+/* Matricula */
+.coluna-matricula, .coluna-esportes, .coluna-page{
+	background-color: #002561;
+	background-image: url(images/matriculas-icone.png);
+}
+
+.coluna-calendario{
+	background-color: #00377b;
+	background-image: url(images/calendario-icone.png);
+}
+
+.coluna-boleto{
+	background-color: #023f88;
+	background-image: url(images/boleto-icone.png);
+}
+
+.coluna-boletim{
+	background-color: #034ea2;
+	background-image: url(images/boletim-icone.png);
+}
+
+.coluna-links-home{
+	padding: 10px;
+	height: 64px;
+	background-position: 250px center;
+	background-size: 15%;
+	background-repeat: no-repeat;
+}
+
+	.coluna-links h2.titulo-area{
+		text-align: left;
+	}
+
+.home-divisao{
+	width: 100% !important;
+	height: 5px;
+	background-color: #FFF;
+	display: block;
+}
+
+/* Downloads */
+.coluna-downloads{
+	background-color: #F47E1F;
+}
+
+	ul.downloads-posts{
+		display: block;
+		background: #FFF;
+		display: block;
+		overflow: hidden;
+	}
+
+	ul.downloads-posts li{
+		background-image: url(images/download-icone.png);
+		background-position: 10px center;
+		background-repeat: no-repeat;
+		background-size: 35px;
+		padding: 10px;
+		padding-left: 60px;
+		padding-top: 20px;
+		display: block;
+		height: 22px;
+		overflow: hidden;
+		font-size: 12px;
+	}
+
+	ul.downloads-posts li a{
+		color: #000;
+	}
+
+
+
+/* Area do Aluno */
+.coluna-area-do-aluno{
+	background-color: #00A187;
+	height: 100%;
+}
+
+	.coluna-area-do-aluno form{
+		text-align: center;
+	}
+
+	.coluna-area-do-aluno form .submit{
+		border: none;
+		background: #00a65e;
+		margin-top: 15px;
+		width: 300px;
+		padding: 10px;
+		color: #FFF;
+		font-size: 18px;
+		font-family: "Futura";
+		cursor: pointer;
+	}
+
+	.coluna-area-do-aluno form input.input-text{
+		width: 260px;
+		padding: 10px 20px	;
+		height: 40px;
+		border: none;
+		color: #FFF;
+		font-size: 18px;
+		background-color: rgba(255,255,255,0.2);
+		margin-top: 20px;
+		text-align: center;
+		font-family: "Futura";
+	}
+
+/* Area do Aluno */
+.coluna-localizacao{
+	background-color: #FFCB2F;
+}
+
+
+	.coluna-localizacao .endereco{
+		background-color: #FFF;
+		font-size: 14px;
+		text-align: center;
+		padding: 10px 0px;
+		font-style: normal;
+	}
+	.coluna-localizacao .endereco address{
+		font-style: normal;
+		line-height: 20px;
+	}
+
+/* Rodape */
+#rodape{
+	background-color: #002561;
+	color: #FFF;
+	width: 100%;
+	display: block;
+	padding: 30px 0px;
+	text-align: center;
+}
+
+/* Internas  */
+#archive{
+
+}
+
+	#archive a{
+		color: #FFF;
+	}
+
+	#archive .archive-videos{
+		display: block;
+		float: left;
+		padding-bottom: 10px;
+	}
+
+	#archive .archive-videos .videos-lista{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+		#archive .archive-videos .videos-lista ul{
+			display: block;
+		}
+
+			#archive .archive-videos .videos-lista ul li{
+				display: inline-block;
+				width: 310px;
+				height: 200px;
+				position: relative;
+				overflow: hidden;
+				background: red;
+			}
+
+			#archive .archive-videos .videos-lista ul li img.attachment-video-thumbnail-lista{
+				width: 100% !important;
+				height: auto !important;
+			}
+
+			#archive .archive-videos .videos-lista .videos-lista-titulo{
+				position: absolute;
+				background-color: rgba(0,0,0, 0.5);
+				width: 100%;
+				height: 50px;
+				bottom: 0px;
+			}
+
+			#archive .archive-videos .videos-lista .videos-lista-titulo span{
+				display: block;
+				padding: 10px;
+				color: #FFF;
+			}
+
+			#archive .archive-videos .videos-lista .videos-lista-titulo span a{
+				color: #FFF;
+			}
+	
+	#archive .videos-destaque{
+		position: relative;
+		height: 400px;
+		overflow: hidden;
+	}
+
+	#archive .videos-destaque img.attachment-video-thumbnail-destaque{
+		width: 620px !important;
+		height: auto !important;
+	}
+
+	#archive .videos-destaque .videos-destaque-titulo{
+		position: absolute;
+		background-color: rgba(0,0,0, 0.5);
+		width: 100%;
+		height: 50px;
+		overflow: hidden;
+		bottom: 0px;
+	}
+
+	#archive .videos-destaque .videos-destaque-titulo span{
+		display: block;
+		padding: 10px;
+	}
+	#archive .videos-destaque-texto{
+		color: #FFF;
+		font-size: 14px;
+	}
+
+
+/* Fotos */
+#fotos-galeria{
+	margin-top: 20px;
+}
+
+	#fotos-galeria .gallery{
+
+	}
+
+	#fotos-galeria .gallery .gallery-item{
+		margin-bottom: 10px;
+	}
+
+		#fotos-galeria .gallery .gallery-item img{
+			border: none !important;
+		}
+
+/* Lista Posts Informativo e TOS */
+
+#archive .archive-informativos-tos{
+	display: block;
+	float: left;
+	padding-bottom: 10px;
+}
+
+	.informatvos-tos-lista{
+
+	}
+
+		.informatvos-tos-lista ul{
+			
+		}
+
+			.informatvos-tos-lista li{
+				display: block;
+				width: 100%;
+				clear: both;
+				float: left;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+
+			.informatvos-tos-lista li img{
+				float: left;
+				margin-right: 10px;
+			}
+/* Calendario */
+#calendario{
+	/*background-color: #00377b;*/
+	color: #00377b;
+	padding: 10px;
+}
+
+	#calendario .fc-view-container{
+		background-color: #FFF;
+	}
+
+	#calendario .fc-event{
+		border: none !important;
+		background-color: #FFF; 
+		color: #00377b;
+		display: inline !important; 
+		vertical-align: middle;
+	}
+	#calendario .fc-content{
+		background-color: #00377b;
+		color: #FFF;
+		padding: 3px 5px;s
+	}
+
+	#calendario .fc-today{
+		color: #000;
+	}
+
+	#pagina .pagina-calendario{
+		background-image: none;
+	}
+
+/* Matricula */
+#pagina .coluna-matricula, #pagina .coluna-esportes, #pagina .coluna-page{
+	background-image: none;
+	float: left;
+}
+
+
+/* Downlaods */
+.pagina-downloads{
+
+}
+
+	.pagina-downloads .download-link{
+
+	}
+
+/* Contato */
+.pagina-contato{
+	background: transparent !important;
+	color: #FFF;
+}
+
+	.pagina-contato .localizacao{
+		text-align: center;
+	}
+
+	.pagina-contato p{
+		color: #FFF !important;
+	}
+
+	.pagina-contato .localizacao .mapa{
+		margin-top: 30px;
+	}
+
+	#cntctfrm_contact_form{
+
+	}
+
+		#cntctfrm_contact_form input[type="submit"]{
+			border: none;
+			background: #00a65e;
+			width: 100%;
+			/*padding: 10px;*/
+			color: #FFF;
+			font-size: 18px;
+			font-family: "Futura";
+			cursor: pointer;
+			margin-top: 30px !important;
+			height: 50px;
+		}
+
+		#cntctfrm_contact_form .text, #cntctfrm_contact_message{
+			border: none;
+			color: #FFF;
+			font-size: 18px;
+			background-color: rgba(255,255,255,0.2);
+			margin-top: 20px !important;
+			font-family: "Futura";
+			padding: 10px
+		}
+
+		#cntctfrm_contact_message{
+			height: 100px;
+		}
+
+/* Busca Resultado */
+#busca-resultado{
+	display: block;
+}
+
+	#busca-resultado li{
+		display: block;
+		width: 100%;
+		clear: both;
+		min-height: 100px;
+		margin-bottom: 10px;
+	}
+
+	#busca-resultado li a{
+		color: #FFF;
+	}
+
+	#busca-resultado li img{
+		float: left;
+		margin-right: 10px;
+	}
+
+	#busca-resultado .buscar-subtitulo{
+		font-size: 12px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.coluna-buscar header{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+#buscar-interna{
+		
+}
+
+	#buscar-interna #pesquisar{
+		background-image: url(images/buscar-icone.png);
+		background-repeat: no-repeat;
+		background-position: 95% center;
+		background-color: transparent;
+		background-size: 40px;
+		border: 1px solid #FFF;
+		width: 100%;
+		height: 50px;
+		margin-top: 10px;
+		color: #FFF;
+		font-size: 16px;
+		font-family: "Futura";
+	}
+
+/* Esporte */
+.pagina-esporte{
+
+}
+
+	.pagina-esporte .coluna-esporte a{
+		color: #FFF;
+	}
+	.esportes-destaque-conteudo{
+		background-color: #3c4261;
+		padding: 10px;
+	}
+
+	.esportes-destaque-conteudo .esporte-destaque-card{
+		font-size: 14px;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.esporte-campeonatos-lista{
+		text-align: center;
+		background-color: #3c4261;
+	}
+
+		.esporte-campeonatos-lista ul{
+			font-size: 14px;
+		}
+
+		.esporte-campeonatos-lista ul li{
+			padding: 5px 0px;
+		}
+
+		.esporte-campeonatos-lista ul li:nth-child(2n+1){
+			background-color: #7480b0;
+		}
+
+		.esporte-campeonatos-lista .campeonatos-titulo{
+			background-color: #3c4261;
+			text-transform: uppercase;
+			padding: 5px 0px;
+		}
